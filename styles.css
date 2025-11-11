@@ -50,6 +50,97 @@ table {
 	border-spacing: 0;
 }
 
+/*Custom styles*/
+
+/*Root styles*/
+:root {
+    --pl-blue: #E9EEF2;
+    --dk-blue: #135070;
+    --mint: #A8BFAA;
+    --title-font: "Lavishly Yours", cursive;
+    --h-font: "Lugrasimo", cursive;
+    --body-font: "Enriqueta", serif;
+}
+
+/*Font styles*/
+h1{
+    font-family: var(--title-font);
+    font-size: 5rem;
+    color: var(--pl-blue);
+}
+
+h2{
+    font-size: 2rem;
+    font-family: var(--h-font);
+}
+
+h3{
+    font-size: 1.5rem;
+    font-family: var(--h-font);
+}
+
+h4{
+    font-size: 1.3rem;
+    font-family: var(--h-font);
+}
+
+p{
+    font-size: 1.2rem;
+    font-family: var(--body-font);
+}
+
+/*Body styles*/
+body{
+    background-color: var(--pl-blue);
+    width: 1280px;
+    margin: auto;
+}
+
+/*Skip link*/
+.skip-link{
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/*Header styles*/
+header{
+    background-color: var(--dk-blue);
+    max-height: 180px;
+    display: flex;
+    flex-direction: column; 
+}
+
+header h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+header img{
+    align-self: flex-start;
+}
+
+
+/*About section styles*/
+.aboutImg {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.aboutImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8%; 
+  background: linear-gradient(to bottom, #135070 0%, transparent 100%);
+  pointer-events: none; 
+}
 
 
 #result{
