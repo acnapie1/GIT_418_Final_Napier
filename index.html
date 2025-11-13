@@ -22,7 +22,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="myScript.js" defer></script>
     <!--TO DO: Favicon-->
     <!--Fonts-->
@@ -40,7 +40,7 @@
         <h1>Luxury Nails</h1>
 
         <!--Image licensed with the Adobe Stock Photo educational license. Text added using Adobe Illustrator-->
-        <img src="images/logo.png" width="100px" height="100px" alt="Luxury nail's logo of a blue rose with the word luxury underneath.">
+        <img src="images/logo.png" width="100" height="100" alt="Luxury nail's logo of a blue rose with the word luxury underneath.">
     
         <!--Nav-->
         <nav>
@@ -56,8 +56,8 @@
     <main>
         <section id="about">
             <div class="aboutDiv">
-                <div class="aboutImg"><img src="images/banner_img.jpeg" width="1280px" height="596px" alt="Nails with a blue design."></div>
-                <h2>Meet Luxury</h2>
+                <div class="aboutImg"><img src="images/banner_img.jpeg" width="1280" height="596" alt="Nails with a blue design."></div>
+                <div class="aboutHeader"><h2>Meet Luxury</h2></div>
             </div>
             <p>Go beyond the normal nail salon. Seek luxury. Luxury Nails is a high end nail salon located in the heart of Buckhead. We offer a variety of 
                 services. From custom nail art to relaxing spa treatments. Luxury Nails offers an experience found at no other nail salon.
@@ -79,62 +79,84 @@
                     <h3>Waxing</h3>
                     <p>Shape up your brows with our sensitive skin safe eyebrow waxing. Hair where you do not want it? Our esthetician can get rid of any pesky unwanted hair.</p>
                 </div>
-                <div class="nailArtGrid">
-                    <h3>Custom Nail Art</h3>
-                    <p>Transform your nails into a piece of art with our customizable nail art. Our techs are 
-                        skilled professionals and dedicated artist.
-                    </p>
+                <div class="repairGrid">
+                    <h3>Nail Repair</h3>
+                    <p>Damaged nails? Come to us. We are skilled in repairing damaged nails. Walk out of here ready to show off your nails.</p>
                 </div>
             </div>
-            <h4>Some of our Designs</h4>
-            <div class="slideshow">
-                <div><img src="https://images.unsplash.com/photo-1571290274554-6a2eaa771e5f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=987" alt="Nail design 1"></div>
-                <div><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=987" alt="Nail design 2"></div>
-                <div><img src="https://images.unsplash.com/photo-1588015810531-dd522c9c8bbb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1001" alt="Nail design 3"></div>
-                <div><img src="https://images.unsplash.com/photo-1735236007245-9dc6e28bbe56?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1646" alt="Nail design 5"></div>
-                <div><img src="https://images.unsplash.com/photo-1687723977270-4f86dbda39e6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=987" alt="Nail design 6"></div>
-                <div><img src="https://images.unsplash.com/photo-1572814601679-4ef8f7b5ebd1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1005" alt="Nail design 7"></div>
-                <div><img src="https://images.unsplash.com/photo-1754799670312-8e7da8e40ad7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1064" alt="Nail design 8"></div>
-                <div><img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070" alt="Nail design 9"></div>
-                <div><img src="https://images.unsplash.com/photo-1720343409646-960f6dcccae3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=927" alt="Nail design 10"></div>
-            </div>
+             <div class="nailArtGrid">
+                <h3>Custom Nail Art</h3>
+                <p>Transform your nails into a piece of art with our customizable nail art. Our techs are 
+                    skilled professionals and dedicated artist.
+                </p>
+                <h4>Some of our Designs</h4>
+                <div class="slideshow">
+                    <div><img src="https://images.unsplash.com/photo-1571290274554-6a2eaa771e5f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=987" alt="Nail design 1"></div>
+                    <div><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=987" alt="Nail design 2"></div>
+                    <div><img src="https://images.unsplash.com/photo-1588015810531-dd522c9c8bbb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1001" alt="Nail design 3"></div>
+                    <div><img src="https://images.unsplash.com/photo-1735236007245-9dc6e28bbe56?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1646" alt="Nail design 5"></div>
+                    <div><img src="https://images.unsplash.com/photo-1687723977270-4f86dbda39e6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=987" alt="Nail design 6"></div>
+                    <div><img src="https://images.unsplash.com/photo-1572814601679-4ef8f7b5ebd1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1005" alt="Nail design 7"></div>
+                    <div><img src="https://images.unsplash.com/photo-1754799670312-8e7da8e40ad7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1064" alt="Nail design 8"></div>
+                    <div><img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070" alt="Nail design 9"></div>
+                    <div><img src="https://images.unsplash.com/photo-1720343409646-960f6dcccae3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=927" alt="Nail design 10"></div>
+                </div>
+             </div>
         </section>
 
         <section id="booking">
             <h2>Book an Appointment</h2>
-            <form id="appForm">
-                <label for="name">Full Name<span class="required">*</span></label>
-                <input type="text" name="name" id="name" autocomplete="name">
-                <span class="message"></span>
+            <div class="bookingDiv">
+                <form id="appForm">
+                    <div class="nameDiv">
+                        <label for="name">Full Name<span class="required">*</span></label>
+                        <input type="text" name="name" id="name" autocomplete="name">
+                        <span class="message"></span>
+                    </div>
 
-                <label for="number">Phone Number<span class="required">*</span></label>
-                <input type="tel" name="number" id="number" autocomplete="tel">
-                <span class="message"></span>
+                    <div class="numDiv">
+                        <label for="number">Phone Number<span class="required">*</span></label>
+                        <input type="tel" name="number" id="number" autocomplete="tel">
+                        <span class="message"></span>
+                    </div>          
+                    
+                    <div class="emailDiv">
+                        <label for="emailAd">Email Address<span class="required">*</span></label>
+                        <input type="email" name="emailAd" id="emailAd" autocomplete="email">
+                        <span class="message"></span>
+                    </div>
 
-                <label for="emailAd">Email Address<span class="required">*</span></label>
-                <input type="email" name="emailAd" id="emailAd" autocomplete="email">
-                <span class="message"></span>
+                    <div class="fieldsetDiv">
+                        <fieldset>
+                            <legend>Select Preferred Contact Method<span class="required">*</span></legend>
+                            <input id="optionPhone" type="radio" name="contact" value="phone">
+                            <label for="optionPhone">Phone</label>
+                            <input id="optionEmail" type="radio" name="contact" value="email">
+                            <label for="optionEmail">Email</label>
+                            <span class="message"></span>
+                        </fieldset>
+                    </div>
 
-                <fieldset>
-                    <legend>Select Preferred Contact Method<span class="required">*</span></legend>
-                    <input id="optionPhone" type="radio" name="contact" value="phone">
-                    <label for="optionPhone">Phone</label>
-                    <input id="optionEmail" type="radio" name="contact" value="email">
-                    <label for="optionEmail">Email</label>
-                    <span class="message"></span>
-                </fieldset>
+                    <div class="dateDiv">
+                        <label for="appointmentDate">Please Pick a Date<span class="required">*</span></label>
+                        <input type="text" id="appointmentDate" placeholder="Pick a date">
+                        <span class="message"></span>
+                    </div>
 
-                <label for="appointmentDate">Please Pick a Date<span class="required">*</span></label>
-                <input type="text" id="appointmentDate" placeholder="Pick a date">
-                <span class="message"></span>
+                    <div class="timeDiv">
+                        <label for="appointmentTime">Please select a Time<span class="required">*</span></label>
+                        <input type="text" id="appointmentTime" placeholder="Pick a time">
+                        <span class="message"></span>
+                    </div>
 
-                <label for="appointmentTime">Please select a Time<span class="required">*</span></label>
-                <input type="text" id="appointmentTime" placeholder="Pick a time">
-                <span class="message"></span>
-
-                <button type="submit">Submit</button>
-            </form>
-            <p id="appointmentDisplay"></p>
+                    <div class="outputDiv"><p id="appointmentDisplay"></p></div>
+                    
+                     <div class="buttonDiv">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+               
+            </div>
         </section>
         <section id="quiz">
         <h2>Find Your Perfect Color</h2>
@@ -158,29 +180,30 @@
         </section>
     </main>
     <footer>
-        <p>Follow us on social media</p>
-        <!--TO DO: change i con colors-->
-        <!-- Social Media Icon Set Made With NiftyButtons.com -->
-        <div class="social-icons" style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;">
-        <a href="#" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; padding: 7px; background: linear-gradient(135deg, #764ba2 0%, #9333ea 100%); border-radius: 50%; color: #ffffff; text-decoration: none;" >
-            <svg class="niftybutton-facebook" data-donate="true" data-tag="fac" data-name="Facebook" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="36px" height="36px" style="width: 36px; height: 36px; display: block; fill: #ffffff;"><title>Facebook social icon</title>
-            <path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z" fill="#ffffff"></path>
-        </svg>
-        </a>
-        <a href="#" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; padding: 7px; background: linear-gradient(135deg, #764ba2 0%, #9333ea 100%); border-radius: 50%; color: #ffffff; text-decoration: none;" >
-            <svg class="niftybutton-tiktok" data-donate="true" data-tag="tic" data-name="TikTok" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="36px" height="36px" style="width: 36px; height: 36px; display: block; fill: #ffffff;"><title>TikTok social icon</title>
-            <path d="M 386.160156 141.550781 C 383.457031 140.15625 380.832031 138.625 378.285156 136.964844 C 370.878906 132.070312 364.085938 126.300781 358.058594 119.785156 C 342.976562 102.523438 337.339844 85.015625 335.265625 72.757812 L 335.351562 72.757812 C 333.617188 62.582031 334.332031 56 334.441406 56 L 265.742188 56 L 265.742188 321.648438 C 265.742188 325.214844 265.742188 328.742188 265.589844 332.226562 C 265.589844 332.660156 265.550781 333.058594 265.523438 333.523438 C 265.523438 333.714844 265.523438 333.917969 265.484375 334.117188 C 265.484375 334.167969 265.484375 334.214844 265.484375 334.265625 C 264.011719 353.621094 253.011719 370.976562 236.132812 380.566406 C 227.472656 385.496094 217.675781 388.078125 207.707031 388.066406 C 175.699219 388.066406 149.757812 361.964844 149.757812 329.734375 C 149.757812 297.5 175.699219 271.398438 207.707031 271.398438 C 213.765625 271.394531 219.789062 272.347656 225.550781 274.226562 L 225.632812 204.273438 C 190.277344 199.707031 154.621094 210.136719 127.300781 233.042969 C 115.457031 243.328125 105.503906 255.605469 97.882812 269.316406 C 94.984375 274.316406 84.042969 294.410156 82.714844 327.015625 C 81.882812 345.523438 87.441406 364.699219 90.089844 372.625 L 90.089844 372.792969 C 91.757812 377.457031 98.214844 393.382812 108.742188 406.808594 C 117.230469 417.578125 127.253906 427.035156 138.5 434.882812 L 138.5 434.714844 L 138.667969 434.882812 C 171.925781 457.484375 208.800781 456 208.800781 456 C 215.183594 455.742188 236.566406 456 260.851562 444.492188 C 287.785156 431.734375 303.117188 412.726562 303.117188 412.726562 C 312.914062 401.367188 320.703125 388.425781 326.148438 374.449219 C 332.367188 358.109375 334.441406 338.507812 334.441406 330.675781 L 334.441406 189.742188 C 335.273438 190.242188 346.375 197.582031 346.375 197.582031 C 346.375 197.582031 362.367188 207.832031 387.316406 214.507812 C 405.214844 219.257812 429.332031 220.257812 429.332031 220.257812 L 429.332031 152.058594 C 420.882812 152.976562 403.726562 150.308594 386.160156 141.550781 Z M 386.160156 141.550781" fill="#ffffff"></path>
-        </svg>
-        </a>
-        <a href="#" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; padding: 7px; background: linear-gradient(135deg, #764ba2 0%, #9333ea 100%); border-radius: 50%; color: #ffffff; text-decoration: none;" >
-            <svg class="niftybutton-instagram" data-donate="true" data-tag="ins" data-name="Instagram" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="36px" height="36px" style="width: 36px; height: 36px; display: block; fill: #ffffff;"><title>Instagram social icon</title>
-            <path d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z" fill="#ffffff"></path>
-            <path d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z" fill="#ffffff"></path>
-            <circle cx="351.5" cy="160.5" r="21.5" fill="#ffffff"></circle>
-        </svg>
-        </a>
+        <div class="footerGrid">
+            <div class="socialText"><p>Follow us on social media</p></div>
+            <!-- Social Media Icon Set Made With NiftyButtons.com -->
+            <div class="social-icons" style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;">
+            <a href="#" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; padding: 7px; background: linear-gradient(135deg, #fff6d5 0%, #fff6d5 100%); border-radius: 50%; color: #C2890A; text-decoration: none;" >
+                <svg class="niftybutton-facebook" data-donate="true" data-tag="fac" data-name="Facebook" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="36px" height="36px" style="width: 36px; height: 36px; display: block; fill: #C2890A;"><title>Facebook social icon</title>
+                <path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z" fill="#C2890A"></path>
+            </svg>
+            </a>
+            <a href="#" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; padding: 7px; background: linear-gradient(135deg, #fff6d5 0%, #fff6d5 100%); border-radius: 50%; color: #C2890A; text-decoration: none;" >
+                <svg class="niftybutton-tiktok" data-donate="true" data-tag="tic" data-name="TikTok" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="36px" height="36px" style="width: 36px; height: 36px; display: block; fill: #C2890A;"><title>TikTok social icon</title>
+                <path d="M 386.160156 141.550781 C 383.457031 140.15625 380.832031 138.625 378.285156 136.964844 C 370.878906 132.070312 364.085938 126.300781 358.058594 119.785156 C 342.976562 102.523438 337.339844 85.015625 335.265625 72.757812 L 335.351562 72.757812 C 333.617188 62.582031 334.332031 56 334.441406 56 L 265.742188 56 L 265.742188 321.648438 C 265.742188 325.214844 265.742188 328.742188 265.589844 332.226562 C 265.589844 332.660156 265.550781 333.058594 265.523438 333.523438 C 265.523438 333.714844 265.523438 333.917969 265.484375 334.117188 C 265.484375 334.167969 265.484375 334.214844 265.484375 334.265625 C 264.011719 353.621094 253.011719 370.976562 236.132812 380.566406 C 227.472656 385.496094 217.675781 388.078125 207.707031 388.066406 C 175.699219 388.066406 149.757812 361.964844 149.757812 329.734375 C 149.757812 297.5 175.699219 271.398438 207.707031 271.398438 C 213.765625 271.394531 219.789062 272.347656 225.550781 274.226562 L 225.632812 204.273438 C 190.277344 199.707031 154.621094 210.136719 127.300781 233.042969 C 115.457031 243.328125 105.503906 255.605469 97.882812 269.316406 C 94.984375 274.316406 84.042969 294.410156 82.714844 327.015625 C 81.882812 345.523438 87.441406 364.699219 90.089844 372.625 L 90.089844 372.792969 C 91.757812 377.457031 98.214844 393.382812 108.742188 406.808594 C 117.230469 417.578125 127.253906 427.035156 138.5 434.882812 L 138.5 434.714844 L 138.667969 434.882812 C 171.925781 457.484375 208.800781 456 208.800781 456 C 215.183594 455.742188 236.566406 456 260.851562 444.492188 C 287.785156 431.734375 303.117188 412.726562 303.117188 412.726562 C 312.914062 401.367188 320.703125 388.425781 326.148438 374.449219 C 332.367188 358.109375 334.441406 338.507812 334.441406 330.675781 L 334.441406 189.742188 C 335.273438 190.242188 346.375 197.582031 346.375 197.582031 C 346.375 197.582031 362.367188 207.832031 387.316406 214.507812 C 405.214844 219.257812 429.332031 220.257812 429.332031 220.257812 L 429.332031 152.058594 C 420.882812 152.976562 403.726562 150.308594 386.160156 141.550781 Z M 386.160156 141.550781" fill="#C2890A"></path>
+            </svg>
+            </a>
+            <a href="#" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; padding: 7px; background: linear-gradient(135deg, #fff6d5 0%, #fff6d5 100%); border-radius: 50%; color: #C2890A; text-decoration: none;" >
+                <svg class="niftybutton-instagram" data-donate="true" data-tag="ins" data-name="Instagram" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="36px" height="36px" style="width: 36px; height: 36px; display: block; fill: #C2890A;"><title>Instagram social icon</title>
+                <path d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z" fill="#C2890A"></path>
+                <path d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z" fill="#C2890A"></path>
+                <circle cx="351.5" cy="160.5" r="21.5" fill="#ffffff"></circle>
+            </svg>
+            </a>
+            </div>
+            <div class="copyright"><p>This website is for educational purposes only &copy; 2025</p></div>
         </div>
-        <p>This website is for educational purposes only &copy 2025</p>
     </footer>
 </body>
 
