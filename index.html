@@ -20,11 +20,13 @@
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="myScript.js" defer></script>
-    <!--TO DO: Favicon-->
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,8 +37,21 @@
         <!-- Skip Link -->
         <a class="skip-link" href="#main">Skip to main content</a>
 
-        <!--TO DO: Light/Dark Mode Toggle Button -->
+         <!-- Light/Dark Mode Toggle Button -->
+        <button id="light-toggle" aria-label="Toggle for light/dark mode">
+        <svg width="35px" height="35px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+            <clipPath id="a">
+                <path d="m18.512 18.512h62.977v62.977h-62.977z" />
+            </clipPath>
+            </defs>
+            <g clip-path="url(#a)">
+            <path d="m65.098 68.164c-9.2812 7.7266-23.09 7.2422-31.797-1.4648-8.707-8.7031-9.1953-22.516-1.4648-31.793 0.74609-0.89844 2.1016-0.96875 2.9258-0.14453l30.473 30.477c0.82422 0.82422 0.75391 2.1797-0.13672 2.9258m7.168-40.43c-12.297-12.297-32.234-12.297-44.531 0-12.297 12.301-12.297 32.234 0 44.531s32.234 12.297 44.531 0 12.297-32.23 0-44.531" fill="#333" fill-rule="evenodd" />
+            </g>
+        </svg>
+        </button>
 
+        <!--Title-->
         <h1>Luxury Nails</h1>
 
         <!--Image licensed with the Adobe Stock Photo educational license. Text added using Adobe Illustrator-->
@@ -54,8 +69,10 @@
     </header>
 
     <main>
+        <!--The section for information on the website.-->
         <section id="about">
             <div class="aboutDiv">
+                <!--Image licensed with the Adobe Stock Photo educational license.-->
                 <div class="aboutImg"><img src="images/banner_img.jpeg" width="1280" height="596" alt="Nails with a blue design."></div>
                 <div class="aboutHeader"><h2>Meet Luxury</h2></div>
             </div>
@@ -64,6 +81,7 @@
             </p>
         </section>
 
+        <!--Services the company offers-->
         <section id="services">
             <h2>Our Services</h2>
             <div class="servicesGrid">
@@ -89,7 +107,9 @@
                 <p>Transform your nails into a piece of art with our customizable nail art. Our techs are 
                     skilled professionals and dedicated artist.
                 </p>
+                <!--A slide show showing the nail designs the company has done. It is a javascript function.-->
                 <h4>Some of our Designs</h4>
+                 <!--Images found on Unsplash.-->
                 <div class="slideshow">
                     <div><img src="https://images.unsplash.com/photo-1571290274554-6a2eaa771e5f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=987" alt="Nail design 1"></div>
                     <div><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=987" alt="Nail design 2"></div>
@@ -104,9 +124,11 @@
              </div>
         </section>
 
+        <!--The booking section for the website.-->
         <section id="booking">
             <h2>Book an Appointment</h2>
             <div class="bookingDiv">
+                <!--The booking form-->
                 <form id="appForm">
                     <div class="nameDiv">
                         <label for="name">Full Name<span class="required">*</span></label>
@@ -136,19 +158,19 @@
                             <span class="message"></span>
                         </fieldset>
                     </div>
-
+                    <!--The date picker section that comes from javascript-->
                     <div class="dateDiv">
                         <label for="appointmentDate">Please Pick a Date<span class="required">*</span></label>
                         <input type="text" id="appointmentDate" placeholder="Pick a date">
                         <span class="message"></span>
                     </div>
-
+                    <!--The date picker section that comes from javascript-->
                     <div class="timeDiv">
                         <label for="appointmentTime">Please select a Time<span class="required">*</span></label>
                         <input type="text" id="appointmentTime" placeholder="Pick a time">
                         <span class="message"></span>
                     </div>
-
+                    <!--The date selected message that comes from javascript-->
                     <div class="outputDiv"><p id="appointmentDisplay"></p></div>
                     
                      <div class="buttonDiv">
@@ -158,6 +180,8 @@
                
             </div>
         </section>
+
+        <!--The color picking quiz-->
         <section id="quiz">
         <h2>Find Your Perfect Color</h2>
         
@@ -179,6 +203,8 @@
             <div id="result"></div>
         </section>
     </main>
+
+    <!--Website footer-->
     <footer>
         <div class="footerGrid">
             <div class="socialText"><p>Follow us on social media</p></div>

@@ -56,7 +56,6 @@ table {
 :root {
     --pl-blue: #E9EEF2;
     --dk-blue: #135070;
-    --mint: #A8BFAA;
     --title-font: "Lavishly Yours", cursive;
     --h-font: "Lugrasimo", cursive;
     --body-font: "Enriqueta", serif;
@@ -64,6 +63,7 @@ table {
     --lt-gold: #fff6d5;
     --md-blue: #0E4E7B;
     --gold: #D99E30;
+    --gray: #576B79;
 }
 
 /*Font styles*/
@@ -108,6 +108,46 @@ body{
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+/*Light and dark modes for background*/
+body.light-mode {
+  background-color: var(--pl-blue);
+  color: black;
+}
+
+body.dark-mode {
+  background-color: var(--gray);
+  color: var(--pl-blue);
+}
+
+body.dark-mode .nailArtGrid h4, body.dark-mode .nailArtGrid h3, body.dark-mode .nailArtGrid p, body.dark-mode #quiz label, body.dark-mode #result{
+    background-color: var(--gray);
+}
+
+body.dark-mode #appForm{
+    color: black;
+}
+
+/*Light/Dark toggle*/
+#light-toggle {
+  position: absolute;
+  top: 0.5rem;
+  right: 8rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--dk-blue);
+  border: 1px solid #576B79;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  appearance: none;
+  z-index: 1;
 }
 
 /*Header styles*/
@@ -288,7 +328,7 @@ nav a:hover::before {
 .nailArtGrid{
     text-align: center;
     margin: auto;
-    background-image: url("images/backgroundImg.png");
+    background-image: url("images/backgroundImg.png"); /*Image licensed with the Adobe Stock Photo educational license*/
     background-size: cover;
 }
 
@@ -392,7 +432,7 @@ input[type="radio"]{
 
 #quiz{
     text-align: center;
-    background-image: url("images/gold_swoop.png");
+    background-image: url("images/gold_swoop.png"); /*Image licensed with the Adobe Stock Photo educational license*/
     background-size: cover;
     height: 800px;
 

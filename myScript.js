@@ -1,6 +1,29 @@
 //JavaScript By Abby Napier
 "use strict";
 
+//Light and Dark mode Event 
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleButton = document.getElementById('light-toggle'); //calling the light toggle button
+  const body = document.body; //body of the HTML
+
+  //Discovers if the browser prefers light or dark mode
+  if (!body.classList.contains('light-mode') && !body.classList.contains('dark-mode')) {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches; //Sees if dark mode is the computer setting 
+    body.classList.add(prefersDark ? 'dark-mode' : 'light-mode'); //Add dark mode if that is the computer setting. If it is not then chooses light mode
+  }
+
+  //Toggle button
+  toggleButton.addEventListener('click', function() { //A click is that causes this function to happen 
+    if (body.classList.contains('dark-mode')) { //If dark mode is chosen when clicked, remove it and add light mode
+      body.classList.remove('dark-mode');
+      body.classList.add('light-mode');
+    } else {
+      body.classList.remove('light-mode'); //Otherwise, remove light mode and chose dark mode
+      body.classList.add('dark-mode');
+    }
+  });
+});
+
 //Color generator function
 $(function() {
   //submit part of the function
