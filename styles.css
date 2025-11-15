@@ -393,7 +393,7 @@ nav a:hover::before {
     border: .5px solid var(--orange);
 }
 
-#appForm input:focus{
+#appForm input[type="text"]:focus, #appForm input[type="tel"]:focus, #appForm input[type="email"]:focus{
     outline: none;
     border: 2px solid var(--orange);
     box-shadow: inset 3px 3px 3px #A6A29F;
@@ -401,7 +401,6 @@ nav a:hover::before {
 
 input[type="radio"]{
     accent-color: var(--md-blue); 
-        box-shadow: none;
 }
 
 .required{
