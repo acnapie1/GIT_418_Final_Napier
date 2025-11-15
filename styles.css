@@ -384,7 +384,7 @@ nav a:hover::before {
     margin: 0 auto;
 }
 
-#appForm input{
+#appForm input[type="text"], #appForm input[type="tel"], #appForm input[type="email"]{
     background-color: var(--lt-gold);
     height: 30px;
     font-size: 1rem;
