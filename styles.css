@@ -428,6 +428,10 @@ input[type="radio"]{
     box-shadow: inset 3px 3px 3px #A6A29F;
 }
 
+.fieldsetDiv radio{
+    box-shadow: none;
+}
+
 /*Quiz Styles*/
 
 #quiz{
