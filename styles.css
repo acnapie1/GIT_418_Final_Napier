@@ -401,6 +401,7 @@ nav a:hover::before {
 
 input[type="radio"]{
     accent-color: var(--md-blue); 
+        box-shadow: none;
 }
 
 .required{
@@ -428,9 +429,6 @@ input[type="radio"]{
     box-shadow: inset 3px 3px 3px #A6A29F;
 }
 
-#optionPhone, #optionEmail{
-    box-shadow: none;
-}
 
 /*Quiz Styles*/
 
